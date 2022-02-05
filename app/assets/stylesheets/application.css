@@ -20,7 +20,7 @@
   box-sizing:border-box;
 }
 
-header, h1, nav, .list-comment {
+header, h1, h4, nav, .list-comment {
   font-family: 'Kaushan Script', cursive, sans-serif;
 }
 
@@ -32,7 +32,7 @@ header{
   border-top:solid 5px #000000;
 }
 
-header .headline{
+.headline{
   font-size:32px;
 }
 
@@ -94,4 +94,16 @@ main{
   overflow:hidden;
   white-space:nowrap;
   text-overflow:ellip;
+}
+
+.title-box{
+  margin:20px auto;
+}
+
+.body-box{
+  margin-bottom:20px;
+}
+
+.submit{
+  border-radius:3px;
 }

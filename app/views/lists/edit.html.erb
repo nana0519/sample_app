@@ -1,13 +1,21 @@
-<h1>編集画面</h1>
+<div class="headline edit-heading">編集画面</div>
 
 <%= form_with model: @list, url: update_list_path(@list.id), method: :patch, local:true do |f| %>
 
- <h4>タイトル</h4>
- <%= f.text_field :title %>
+ <div class="title-box">
+   <h4>タイトル</h4>
+   <%= f.text_field :title %>
+ </div>
  
- <h4>本文</h4>
- <%= f.text_area :body %>
  
- <%= f.submit '保存' %>
+ <div class="body-box">
+  <h4>本文</h4>
+  <%= f.text_area :body %>
+ </div>
+ 
+ <div class="submit">
+   <%= f.submit '保存' %>
+ </div>
+ 
  
 <% end %>
